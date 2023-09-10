@@ -10,10 +10,11 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
 
 // const prisma = global.prisma || new PrismaClient();
 
-// console.log({ prisma });
+// console.log(prisma);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
